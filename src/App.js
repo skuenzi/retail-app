@@ -1,8 +1,18 @@
+// Components
+import Header from './components/Header';
+import Products from './components/Products';
+
+// Styles
+import GlobalStyles from './components/styles/Global';
+
 
 function App() {
   return (
-    <div className="App">
-    </div>
+    <>
+    <GlobalStyles />
+      <Header />
+      <Products />
+    </>
   );
 }
 
