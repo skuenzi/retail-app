@@ -4,7 +4,7 @@ const Header = () => {
     return (
         <StyledHeader>
             <h1>
-                OnlyClimbersGear
+                the climb shop
             </h1>
         </StyledHeader>
     )
