@@ -1,6 +1,6 @@
 // Components
 import Header from './components/Header';
-import Products from './components/Products';
+import ProductsList from './components/ProductsList';
 
 // Styles
 import GlobalStyles from './components/styles/Global';
@@ -11,7 +11,7 @@ function App() {
     <>
     <GlobalStyles />
       <Header />
-      <Products />
+      <ProductsList />
     </>
   );
 }

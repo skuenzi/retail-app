@@ -2,8 +2,10 @@ import React, { useEffect } from 'react'
 import { setProducts } from '../store/products';
 import { useDispatch, useSelector } from 'react-redux';
 import axios from 'axios';
+import Product from './Product';
+import { StyledProductsList } from './styles/Products.styled';
 
-const Products = () => {
+const ProductsList = () => {
 
     const products = useSelector(state => state)
     const dispatch = useDispatch()
@@ -37,8 +39,8 @@ const Products = () => {
 
 
     return (
-        <div>products</div>
+            <section><Product /></section>
     )
 }
 
-export default Products
+export default ProductsList
