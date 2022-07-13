@@ -4,8 +4,21 @@ import styled from "styled-components";
 
 
 export const StyledProduct = styled.article`
-    img {
-        max-width: 200px;
-    }
-
-`
+  display: grid;
+  grid-template-areas:
+    "image"
+    "name"
+    "price";
+  img {
+    max-width: 200px;
+    grid-area: image;
+    justify-self: center;
+  }
+  .product-name {
+    grid-area: name;
+  }
+  .product-price {
+    grid-area: price;
+    
+  }
+`;

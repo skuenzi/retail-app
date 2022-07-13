@@ -1,15 +1,20 @@
-import React, { useEffect } from 'react'
-import { setProducts } from '../store/products';
-import { useDispatch, useSelector } from 'react-redux';
-import axios from 'axios';
+import React from 'react'
+import { useSelector } from 'react-redux';
 import Product from './Product';
-import { StyledProductsList } from './styles/Products.styled';
+import { StyledProductsList } from './styles/ProductsList.styled';
 
 const ProductsList = () => {
+    const products = useSelector(state => state.products)
+    const productList = products.map(product => {
+
+        return (
+            <Product key={product.id} {...product}/>
+        )
+    })
 
 
     return (
-            <section><Product /></section>
+            <StyledProductsList>{productList}</StyledProductsList>
     )
 }
 
