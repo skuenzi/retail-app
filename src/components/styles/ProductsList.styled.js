@@ -5,7 +5,7 @@ import styled from "styled-components";
 
 export const StyledProductsList = styled.section`
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 1rem;
     margin: 1rem;
     

@@ -5,6 +5,9 @@ import { StyledProductsList } from './styles/ProductsList.styled';
 
 const ProductsList = () => {
     const products = useSelector(state => state.products)
+    const loading = useSelector(state => state.loading)
+    const error = useSelector(state => state.error)
+
     const productList = products.map(product => {
 
         return (
@@ -14,7 +17,10 @@ const ProductsList = () => {
 
 
     return (
-            <StyledProductsList>{productList}</StyledProductsList>
+        <>
+            {loading ? <h2>Loading climbing stuff...</h2> : <StyledProductsList>{productList}</StyledProductsList>}
+            {error && <h2>Sorry, there was a problem getting the climbing stuff</h2>}
+        </>
     )
 }
 
