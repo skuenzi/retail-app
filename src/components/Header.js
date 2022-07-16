@@ -1,4 +1,5 @@
 import { StyledHeader } from "./styles/Header.styled"
+import {FaShoppingCart} from 'react-icons/fa'
 
 const Header = () => {
     return (
@@ -6,6 +7,7 @@ const Header = () => {
             <h1>
                 the climb shop
             </h1>
+            <FaShoppingCart className="cart-icon"/>
         </StyledHeader>
     )
 }

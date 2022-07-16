@@ -7,9 +7,16 @@ export const StyledHeader = styled.header`
     background-color: #000000;
     color: #FFF;
     padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
     h1 {
         font-weight: 400;
+    }
+
+    .cart-icon {
+        font-size: 2rem;
     }
 
 `

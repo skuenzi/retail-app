@@ -9,12 +9,10 @@ const ProductsList = () => {
     const error = useSelector(state => state.error)
 
     const productList = products.map(product => {
-
         return (
             <Product key={product.id} {...product}/>
         )
     })
-
 
     return (
         <>
