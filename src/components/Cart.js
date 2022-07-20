@@ -1,4 +1,4 @@
-export default function Card(second) {
+export default function Cart(second) {
 
     return (
         <div>

@@ -14,6 +14,7 @@ function App() {
     <Router>
       <GlobalStyles />
       <Header />
+      <ProductDetail />
       <Routes>
         <Route path='/' element={<ProductsList />}/>
         <Route path='/product/:productId' element={<ProductDetail />}/>

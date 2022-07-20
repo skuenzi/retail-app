@@ -1,6 +1,6 @@
 import React from 'react'
 import { useSelector } from 'react-redux';
-import Product from './Product';
+import Product from './ProductCard';
 import { StyledProductsList } from './styles/ProductsList.styled';
 
 const ProductsList = () => {
